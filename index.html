@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="index.css" />
+    </head>
+    <body>
+        <h1>Grid vs Flex</h1>
+        <h3>Example 1</h3>
+        
+        <div class="outer-container">
+            <div class="grid-outer-container">
+                <h2>Grid</h2>
+                <div class="wrapper-grid-example1">
+                  <div class="box-grid-example1 grid-a-example1">A</div>
+                  <div class="box-grid-example1 grid-b-example1">B</div>
+                  <div class="box-grid-example1 grid-c-example1">C</div>
+                  <div class="box-grid-example1 grid-d-example1">D</div>
+                  <div class="box-grid-example1 grid-e-example1">E</div>
+                  <div class="box-grid-example1 grid-f-example1">F</div>
+                </div>
+            </div>
+            <div class="flex-outer-container">
+                <h2>Flex</h2>
+                <div class="wrapper-flex-example1">
+                  <div class="box-flex-example1 flex-a-example1">A</div>
+                  <div class="box-flex-example1 flex-b-example1">B</div>
+                  <div class="box-flex-example1 flex-c-example1">C</div>
+                  <div class="box-flex-example1 flex-d-example1">D</div>
+                  <div class="box-flex-example1 flex-e-example1">E</div>
+                  <div class="box-flex-example1 flex-f-example1">F</div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <label>Observations</label>
+            <ul>
+                <li>height and width should be set for the flex container as well as each flex item</li>
+                <li>height and width if the flex continer has to be calculated accrdingly to achieve the same grid view</li>
+            </ul>
+        </div>
+        
+        
+        <h3>Example 2</h3>
+        
+        <div class="outer-container">
+            <div class="grid-outer-container">
+                <h2>Grid</h2>
+                <div class="wrapper-grid-example2">
+                  <div class="box-grid-example2 grid-a-example2">A</div>
+                  <div class="box-grid-example2 grid-b-example2">B</div>
+                  <div class="box-grid-example2 grid-c-example2">C</div>
+                  <div class="box-grid-example2 grid-d-example2">D</div>
+                  <div class="box-grid-example2 grid-e-example2">E</div>
+                  <div class="box-grid-example2 grid-f-example2">F</div>
+                </div>
+            </div>
+            <div class="flex-outer-container">
+                <h2>Flex</h2>
+                <div class="wrapper-flex-example2">
+                  <div class="box-flex-example2 flex-a-example2">A</div>
+                  <div class="box-flex-example2 flex-b-example2">B</div>
+                  <div class="box-flex-example2 flex-c-example2">C</div>
+                  <div class="box-flex-example2 flex-d-example2">D</div>
+                  <div class="box-flex-example2 flex-e-example2">E</div>
+                  <div class="box-flex-example2 flex-f-example2">F</div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <label>Observations</label>
+            <ul>
+                <li>I feel "grid-template-areas" is better than mentioning the "order" in flex, since once one can tell/modify the layout structure just by observing this property. Where as comparatively its difficult to modify the "order" property in flex since it deals with numbers.</li>
+            </ul>
+        </div>
+        
+        <h3>Example 3</h3>
+        
+        <div class="outer-container">
+            <div class="grid-outer-container">
+                <h2>Grid</h2>
+                <div class="wrapper-grid-example3">
+                  <div class="box-grid-example3 grid-a-example3">A</div>
+                  <div class="box-grid-example3 grid-b-example3">B</div>
+                  <div class="box-grid-example3 grid-c-example3">C</div>
+                  <div class="box-grid-example3 grid-d-example3">D</div>
+                </div>
+            </div>
+            <div class="flex-outer-container">
+                <h2>Flex</h2>
+                <div class="wrapper-flex-example3">
+                    <div class="acd-flex-wrapper">
+                      <div class="box-flex-example3 flex-a-example3">A</div>
+                      <div class="cd-flex-wrapper">
+                        <div class="box-flex-example3 flex-c-example3">C</div>
+                        <div class="box-flex-example3 flex-d-example3">D</div>
+                      </div>
+                    </div>
+                    <div class="box-flex-example3 flex-b-example3">B</div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <label>Observations</label>
+            <ul>
+                <li>One can observe the awesomeness of grid with this example. Its difficult to acheive the same layout using flex </li>
+                <li>See the DOM structure flor flex to acheive this layout. We need many wrappers here since flexx is one dimensional</li>
+                <li>See the css for this example. With grid its very simple where as with flex, we need to deal with width , height for the continer as well as for the items</li>
+            </ul>
+        </div>
+    </body>
+</html>

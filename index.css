@@ -1,0 +1,191 @@
+body {
+    background-color: aliceblue;
+}
+
+.outer-container {
+    display: flex;
+    width: 800px;
+    justify-content: space-between;
+}
+
+/*Example 1*/
+.wrapper-grid-example1 {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(2, 100px);
+  grid-gap: 10px;
+}
+
+.box-grid-example1 {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.wrapper-flex-example1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 320px;
+    height: 220px;
+    justify-content: space-between;
+}
+
+.box-flex-example1 {
+    width: 100px;
+    height: 100px;
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/*Example 2*/
+.wrapper-grid-example2 {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(2, 100px);
+  grid-gap: 10px;
+  grid-template-areas:"area-d area-a area-f"
+                      "area-e area-b area-c"
+}
+
+.box-grid-example2 {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.grid-a-example2 {
+    grid-area:area-a;
+}
+
+.grid-b-example2 {
+    grid-area:area-b;
+}
+
+.grid-c-example2 {
+    grid-area:area-c;
+}
+
+.grid-d-example2 {
+    grid-area:area-d;
+}
+
+.grid-e-example2 {
+    grid-area:area-e;
+}
+
+.grid-f-example2 {
+    grid-area:area-f;
+}
+
+.wrapper-flex-example2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 320px;
+    height: 220px;
+    justify-content: space-between;
+}
+
+.box-flex-example2 {
+    width: 100px;
+    height: 100px;
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.flex-a-example2 {
+    order:2;
+}
+
+.flex-b-example2 {
+    order:5;
+}
+
+.flex-c-example2 {
+    order:6;
+}
+
+.flex-d-example2 {
+    order:1;
+}
+
+.flex-e-example2 {
+    order:4;
+}
+
+.flex-f-example2 {
+    order:3;
+}
+
+
+/*Example 3*/
+.wrapper-grid-example3 {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(2, 100px);
+  grid-gap: 10px;
+  grid-template-areas:"area-a area-a area-b"
+                      "area-c area-d area-b"
+}
+
+.box-grid-example3 {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.grid-a-example3 {
+    grid-area:area-a;
+}
+
+.grid-b-example3 {
+    grid-area:area-b;
+}
+
+.grid-c-example3 {
+    grid-area:area-c;
+}
+
+.grid-d-example3 {
+    grid-area:area-d;
+}
+
+.wrapper-flex-example3 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 320px;
+    height: 220px;
+    justify-content: space-between;
+}
+
+.box-flex-example3 {
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.acd-flex-wrapper {
+    width: 205px;
+}
+
+.flex-a-example3{
+    height: 105px;
+}
+
+.cd-flex-wrapper {
+    display: flex;
+    align-content: center;
+    height: 105px;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.flex-c-example3, .flex-d-example3 {
+    width: 97.5px;
+}
+
+.flex-b-example3 {
+    width: 105px;
+}
+
